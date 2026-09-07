@@ -20,7 +20,7 @@ public class Tranvia implements Transporte {
     }
 
     public int cambiarVia(int nuevaVia){
-       return
+
     }
 
 }

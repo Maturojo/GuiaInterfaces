@@ -3,8 +3,8 @@ public class Autobus implements Transporte{
     private int cantidad;
     private TipoTransporte tipo;
 
-    public Autobus(TipoTransporte tipo, int numeroLinea, int cantidad) {
-        this.tipo = tipo;
+    public Autobus( int numeroLinea, int cantidad) {
+        this.tipo = TipoTransporte.AUTOBUS;
         this.numeroLinea = numeroLinea;
         this.cantidad = cantidad;
     }
