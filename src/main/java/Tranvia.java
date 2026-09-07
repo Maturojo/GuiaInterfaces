@@ -4,6 +4,12 @@ public class Tranvia implements Transporte {
     private int capacidad;
     private TipoTransporte tipo;
 
+    public Tranvia(String numeroLinea, int capacidad) {
+        this.numeroLinea = numeroLinea;
+        this.capacidad = capacidad;
+        this.tipo = TipoTransporte.TRANVIA;
+    }
+
     @Override
     public void arrancar() {
 
@@ -19,8 +25,6 @@ public class Tranvia implements Transporte {
 
     }
 
-    public int cambiarVia(int nuevaVia){
 
-    }
 
 }
