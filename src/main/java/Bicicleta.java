@@ -9,6 +9,22 @@ public class Bicicleta implements Transporte{
 
     }
 
+    public String getNumeroSerie() {
+        return numeroSerie;
+    }
+
+    public void setNumeroSerie(String numeroSerie) {
+        this.numeroSerie = numeroSerie;
+    }
+
+    public TipoTransporte getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(TipoTransporte tipo) {
+        this.tipo = tipo;
+    }
+
     @Override
     public void arrancar() {
 
@@ -20,8 +36,13 @@ public class Bicicleta implements Transporte{
     }
 
     @Override
-    public void obtenerCapacidad() {
+    public int obtenerCapacidad() {
 
+        return 1;
+    }
+
+    void ajustarAsiento(int altura){
+        System.out.println("Subiendo altura a " + altura);
     }
 
 

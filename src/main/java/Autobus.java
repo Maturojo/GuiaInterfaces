@@ -39,8 +39,8 @@ public class Autobus implements Transporte{
     }
 
     @Override
-    public void obtenerCapacidad() {
-
+    public int obtenerCapacidad() {
+        return cantidad;
     }
 
     @Override
@@ -49,7 +49,10 @@ public class Autobus implements Transporte{
     }
 
 
+    void anunciarParada(String parada){
 
+        System.out.println("La siguiente parada = " + parada);
+    }
 
 
 }
